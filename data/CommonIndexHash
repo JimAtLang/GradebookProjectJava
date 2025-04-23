@@ -1,0 +1,10 @@
+import java.util.HashMap;
+
+class CommonIndexHash{
+    public HashMap<String,arraylist<int>>() commonHashMapCreator(arraylist<String>){
+        //for i in arraylist<String>:
+            // if 
+    }
+}
+
+
