@@ -1,9 +1,15 @@
 import java.util.HashMap;
 
 class CommonIndexHash{
-    public HashMap<String,arraylist<int>>() commonHashMapCreator(arraylist<String>){
+    public HashMap<String,ArrayList<Integer>>() commonHashMapCreator(ArrayList<String> grades){
+        HashMap<String,ArrayList<Integer>> rtrn = new HashMap<>();
+        
+        return rtrn;
         //for i in arraylist<String>:
             // if 
+    }
+    private String dropNumber(String s){
+        for (char c:s.toCharArray())
     }
 }
 
