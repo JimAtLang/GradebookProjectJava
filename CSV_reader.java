@@ -25,7 +25,7 @@ public ArrayList<String> readFirstln(String filename){
     return assignments;
 }
 
-
+//Reads file from 2nd line down
 public ArrayList<ArrayList<String>> readFile(String filename){
     File file = new File(filename);
     try {
@@ -36,7 +36,6 @@ public ArrayList<ArrayList<String>> readFile(String filename){
         int i=0;     
         for(String word: text){
             studentArray.add(text[i]);
-            System.out.print(text[i]);
             i+=1;
         }
         lines.add(studentArray);
