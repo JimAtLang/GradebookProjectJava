@@ -8,8 +8,14 @@ class CommonIndexHash{
 
         
     }
+    private String checkAssignmentType (String s){
+        for (String t:s){
+            if t.contains("HW"){
+                
+            }
+        }
+    }
 
-    
 
 
 
