@@ -4,19 +4,11 @@ import java.util.HashMap;
 class CommonIndexHash{
     public HashMap<String,ArrayList<Integer>> commonHashMapCreator(ArrayList<String> grades){
         HashMap<String,ArrayList<Integer>> Hashmap = new HashMap<>();
-
-        return Hashmap;
-
-        
-    }
-    private String checkAssignmentType (String s){
-        for (String t:s){
+        for (String t:grades){
             if( t.contains("HW")){
                 
-            }
-        }
-    }
 
+        return Hashmap;
 
 
 
