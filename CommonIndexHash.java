@@ -1,8 +1,9 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 
 class CommonIndexHash{
-    public HashMap<String,ArrayList<int>>() commonHashMapCreator(ArrayList<String> grades){
-        HashMap<String,ArrayList<int>> Hashmap = new HashMap<>();
+    public HashMap<String,ArrayList<Integer>> commonHashMapCreator(ArrayList<String> grades){
+        HashMap<String,ArrayList<Integer>> Hashmap = new HashMap<>();
 
         return Hashmap;
 
@@ -10,7 +11,7 @@ class CommonIndexHash{
     }
     private String checkAssignmentType (String s){
         for (String t:s){
-            if t.contains("HW"){
+            if( t.contains("HW")){
                 
             }
         }
