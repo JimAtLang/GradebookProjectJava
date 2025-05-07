@@ -1,17 +1,22 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-ArrayList<Integer> gradeIndex= new ArrayList();
+public ArrayList<Integer> HWgradeIndex=new ArrayList();
+public ArrayList<Integer> ProjectgradeIndex=new ArrayList();
+public ArrayList<Integer> QuizgradeIndex=new ArrayList();
+public ArrayList<Integer> TestgradeIndex=new ArrayList();
+public ArrayList<Integer>FinalgradeIndex=new ArrayList();
 class CommonIndexHash{
     public HashMap<String,ArrayList<Integer>> commonHashMapCreator(ArrayList<String> grades){
+        int count = 0;
         HashMap<String,ArrayList<Integer>> Hashmap = new HashMap<>();
-        Hashmap.put("HW", gradeIndex);
-        Hashmap.put("Project", gradeIndex);
-        Hashmap.put("Quiz", gradeIndex);
-        Hashmap.put("Test", gradeIndex);
-        Hashmap.put("Final", gradeIndex);
+        Hashmap.put("HW", HWgradeIndex);
+        Hashmap.put("Project", ProjectgradeIndex);
+        Hashmap.put("Quiz", QuizgradeIndex);
+        Hashmap.put("Test", TestgradeIndex);
+        Hashmap.put("Final", FinalgradeIndex);
         for (String t:grades){
             if(t.contains("HW")){
-                
+                count += 1;
             }
         }
         return Hashmap;
