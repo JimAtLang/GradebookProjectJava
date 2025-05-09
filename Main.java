@@ -6,6 +6,5 @@ public class Main {
 
     public Main(){
         CommonIndexHash commonIndexHash = new CommonIndexHash();
-        commonIndexHash.dropNumbers("HW1");
     }
 }

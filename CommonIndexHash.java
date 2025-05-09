@@ -16,8 +16,21 @@ class CommonIndexHash{
         Hashmap.put("Final", FinalgradeIndex);
         for (String t:grades){
             if(t.contains("HW")){
-                count += 1;
+                Hashmap.get("HW").add(count);
             }
+            else if(t.contains("Project")){
+                Hashmap.get("Project").add(count);
+            }
+            else if(t.contains("Quiz")){
+                Hashmap.get("Quiz").add(count);
+            }
+            else if(t.contains("Test")){
+                Hashmap.get("Test").add(count);
+            }
+            else if(t.contains("Final")){
+                Hashmap.get("Final").add(count);
+            }
+            count ++;
         }
         return Hashmap;
     }
