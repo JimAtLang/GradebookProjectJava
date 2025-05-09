@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-public ArrayList<Integer> HWgradeIndex=new ArrayList();
-public ArrayList<Integer> ProjectgradeIndex=new ArrayList();
-public ArrayList<Integer> QuizgradeIndex=new ArrayList();
-public ArrayList<Integer> TestgradeIndex=new ArrayList();
-public ArrayList<Integer>FinalgradeIndex=new ArrayList();
+public ArrayList<Integer> HWgradeIndex=new ArrayList<Integer>();
+public ArrayList<Integer> ProjectgradeIndex=new ArrayList<Integer>();
+public ArrayList<Integer> QuizgradeIndex=new ArrayList<Integer>();
+public ArrayList<Integer> TestgradeIndex=new ArrayList<Integer>();
+public ArrayList<Integer>FinalgradeIndex=new ArrayList<Integer>();
 class CommonIndexHash{
     public HashMap<String,ArrayList<Integer>> commonHashMapCreator(ArrayList<String> grades){
         int count = 0;
