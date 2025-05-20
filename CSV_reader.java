@@ -10,10 +10,10 @@ public class CSV_reader {
 
 
 public ArrayList<String> readFirstln(String filename){
-    File file = new File(filename); // For example, foo.tx
+    File file = new File("data\\"+filename); // For example, foo.tx
     try {
     BufferedReader brTest = new BufferedReader(new FileReader(file));
-    String[] text=brTest.readLine().split("'");
+    String[] text=brTest.readLine().split(",");
     int i=0;
         for(String schoolWork: text){
             assignments.add(text[i]);
@@ -27,12 +27,12 @@ public ArrayList<String> readFirstln(String filename){
 
 //Reads file from 2nd line down
 public ArrayList<ArrayList<String>> readFile(String filename){
-    File file = new File(filename);
+    File file = new File("data\\"+filename);
     try {
         BufferedReader br = new BufferedReader(new FileReader(file));
         while(br.readLine()!=null){
         ArrayList<String> studentArray= new ArrayList<>();
-        String[] text=br.readLine().split("'");
+        String[] text=br.readLine().split(",");
         int i=0;     
         for(String word: text){
             studentArray.add(text[i]);
