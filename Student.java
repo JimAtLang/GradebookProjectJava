@@ -16,8 +16,14 @@ public class Student {
         return Grades;
     }
     public void addGrade(String type, int grade, ArrayList<Integer> gradesList){
+        if(Grades.containsKey(type)){
         gradesList.add(grade);
-        Grades.replace(type, gradesList);
+        Grades.replace(type, gradesList);            
+        } else{
+            gradesList.add(grade);
+            Grades.put(type, gradesList);
+        }
+
     }
     public void setName(String s){
         this.name=s;
