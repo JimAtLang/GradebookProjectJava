@@ -1,0 +1,12 @@
+class AvgGradeCalculator {
+    //Need two parts in the function:
+    //1. Grade-point convertor (for differently weighted assignments to gain a common denominator)
+    //2. Grade Averager (which averages the grades)
+    private final double HwWeight=1.0;
+    private final double ProjectWeight=1.5;
+    private final double QuizWeight=2.0;
+    private final double TestWeight=2.5;
+    private final double FinalWeight=3.0;
+
+    public Integer GradePointConvertor(int X)
+}
