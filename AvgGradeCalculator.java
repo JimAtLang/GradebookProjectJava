@@ -8,5 +8,11 @@ class AvgGradeCalculator {
     private final double TestWeight=2.5;
     private final double FinalWeight=3.0;
 
-    public Integer GradePointConvertor(int X)
+    public double GradePointConvertor(String assignmentType, int x){
+        if (assignmentType == "HW"){
+            return x*HwWeight;
+        }
+        return 0;
+    }
+
 }
