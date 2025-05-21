@@ -6,17 +6,17 @@ import java.util.ArrayList;
 
 public class CSV_reader {
     ArrayList<ArrayList<String>> lines= new ArrayList<>();
-    ArrayList<String> assignments = new ArrayList<>();
+    ArrayList<Integer> assignments = new ArrayList<>();
 
 
-public ArrayList<String> readFirstln(String filename){
+public ArrayList<Integer> readFirstln(String filename){
     File file = new File("data\\"+filename); // For example, foo.tx
     try {
     BufferedReader brTest = new BufferedReader(new FileReader(file));
     String[] text=brTest.readLine().split(",");
     int i=0;
         for(String schoolWork: text){
-            assignments.add(text[i]);
+            assignments.add(Integer.valueOf(text[i]));
             i+=1;
         }
     } catch (IOException e) {
