@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Student {
     private String name;
     private HashMap<String, ArrayList<Integer>> Grades;
-    Student(String name,HashMap<String, ArrayList<Integer>> Grades){
+    public Student(String name,HashMap<String, ArrayList<Integer>> Grades){
         this.name=name;
         Grades= new HashMap<>();
     }
