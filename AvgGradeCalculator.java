@@ -12,6 +12,16 @@ class AvgGradeCalculator {
         if (assignmentType == "HW"){
             return x*HwWeight;
         }
+        else if (assignmentType == "Quiz"){
+            return x*QuizWeight;
+        }
+        else if (assignmentType == "Test"){
+            return x*TestWeight;
+        }
+        else if (assignmentType == "Final"){
+            return x*FinalWeight;
+        }
+        System.out.println("Something is wrong");
         return 0;
     }
 
