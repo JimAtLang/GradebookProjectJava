@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-
+//si is student Index, ki is keyIndex,
 public class Studentinator {
     public ArrayList<Student> studentsForFile(HashMap<String, ArrayList<Integer>> commonIndex, ArrayList<ArrayList<String>> File){
         ArrayList<Student> Students=new ArrayList<>();
@@ -21,7 +21,7 @@ public class Studentinator {
                         }
                         ki.add(Integer.valueOf(StudentToBe.get(indexN)));
                         hm.replace(key, ki);
-
+                        s.addGrade(key, Integer.valueOf(StudentToBe.get(indexN)));
                 }
             }
             Students.add(s);
