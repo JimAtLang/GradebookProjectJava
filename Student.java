@@ -5,6 +5,9 @@ import java.util.HashMap;
 public class Student {
     private String name;
     private HashMap<String, ArrayList<Integer>> Grades;
+    public void setGrades(HashMap<String, ArrayList<Integer>> grades) {
+        Grades = grades;
+    }
     public Student(String name,HashMap<String, ArrayList<Integer>> Grades){
         this.name=name;
         Grades= new HashMap<>();
@@ -16,7 +19,7 @@ public class Student {
         return Grades;
     }
     public void addGrade(String type, int grade){
-        if(Grades.containsKey(type)){
+        if(Grades==null||Grades.containsKey(type)){
         ArrayList<Integer> gradesList=Grades.get(type);
         gradesList.add(grade);
         Grades.replace(type, gradesList);            
