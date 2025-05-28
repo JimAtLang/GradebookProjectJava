@@ -11,6 +11,7 @@ public class Studentinator {
                 for(String key:commonIndex.keySet()){
                     ArrayList<Integer> si=new ArrayList<>();
                     hm.put(key, si);
+                    System.out.println(commonIndex.get(key));
                     for(Integer indexN:commonIndex.get(key)){
                         ArrayList<Integer> ki= new ArrayList<>();
                         ki=hm.get(key);

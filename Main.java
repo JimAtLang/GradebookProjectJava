@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 public class Main {
     public static void main(String[] args) {
         new Main();
@@ -14,6 +15,9 @@ public class Main {
     file=csvR.readFile("Art");
     HashMap<String, ArrayList<Integer>> CIHOut= new HashMap<>();
     CIHOut= CIH.commonHashMapCreator(csvOut);
+    for(Map.Entry<String, ArrayList<Integer>> pair:CIHOut.entrySet()){
+        System.out.println(pair.getValue());
+    }
     ArrayList<Student> Students=new ArrayList<>();
     s.studentsForFile(CIHOut,file);
     }

@@ -15,6 +15,10 @@ public ArrayList<String> readFirstln(String filename){
     BufferedReader brTest = new BufferedReader(new FileReader(file));
     String[] text=brTest.readLine().split(",");
     int i=0;
+    for(String word:text){
+        assignments.add(text[i]);
+        i++;
+    }
     } catch (IOException e) {
         e.printStackTrace();
     }
