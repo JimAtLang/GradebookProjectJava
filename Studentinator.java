@@ -13,10 +13,9 @@ public class Studentinator {
                     hm.put(key, si);
                     for(Integer indexN:commonIndex.get(key)){
                         ArrayList<Integer> ki= new ArrayList<>();
-                        ki=hm.get(key);
-                        if(StudentToBe.get(indexN)=="NTI"){
+                        if(StudentToBe.get(indexN).equals("NTI")){
                             StudentToBe.set(indexN, "0");
-                        } else if(StudentToBe.get(indexN)=="EXC"){
+                        } else if(StudentToBe.get(indexN).equals("EXC")){
                             continue;
                         }
                         ki.add(Integer.valueOf(StudentToBe.get(indexN)));
