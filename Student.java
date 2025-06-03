@@ -18,18 +18,6 @@ public class Student {
     public HashMap<String, ArrayList<Integer>> getGrades(){
         return Grades;
     }
-    public void addGrade(String type, int grade){
-        if(Grades==null||Grades.containsKey(type)){
-        ArrayList<Integer> gradesList=Grades.get(type);
-        gradesList.add(grade);
-        Grades.replace(type, gradesList);            
-        } else{
-            ArrayList<Integer> gradesList=null;
-            gradesList.add(grade);
-            Grades.put(type, gradesList);
-        }
-
-    }
     public void setName(String s){
         this.name=s;
     }

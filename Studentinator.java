@@ -21,8 +21,8 @@ public class Studentinator {
                         }
                         ki.add(Integer.valueOf(StudentToBe.get(indexN)));
                         hm.replace(key, ki);
-                        s.addGrade(key, Integer.valueOf(StudentToBe.get(indexN)));
                 }
+                s.setGrades(hm);
             }
             Students.add(s);
             System.out.println(s.getName()+"- "+s.getGrades());            
