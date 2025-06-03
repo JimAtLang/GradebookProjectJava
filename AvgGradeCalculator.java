@@ -25,4 +25,14 @@ class AvgGradeCalculator {
         return 0;
     }
 
+    public int GradeAverager(HashMap<String, ArrayList<Integer>>){
+        int average = 0;
+        int denominator = 0;
+        for i in HashMap<String, ArrayList<Integer>>:
+            average += i[1]
+            if 
+
+        return average;
+    }
+
 }
