@@ -4,7 +4,6 @@ import java.util.HashMap;
 public class Studentinator {
     public ArrayList<Student> studentsForFile(HashMap<String, ArrayList<Integer>> commonIndex, ArrayList<ArrayList<String>> File){
         ArrayList<Student> Students=new ArrayList<>();
-        int i=0;
         for(ArrayList<String> StudentToBe:File){
             HashMap<String, ArrayList<Integer>> hm= new HashMap<>();
             Student s = new Student(StudentToBe.get(0), hm);
@@ -12,8 +11,9 @@ public class Studentinator {
                     ArrayList<Integer> si=new ArrayList<>();
                     hm.put(key, si);
                     System.out.println(commonIndex.get(key));
+                    ArrayList<Integer> ki= new ArrayList<>();                    
                     for(Integer indexN:commonIndex.get(key)){
-                        ArrayList<Integer> ki= new ArrayList<>();
+
                         if(StudentToBe.get(indexN).equals("NTI")){
                             StudentToBe.set(indexN, "0");
                         } else if(StudentToBe.get(indexN).equals("EXC")){
