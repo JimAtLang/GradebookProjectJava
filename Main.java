@@ -11,8 +11,8 @@ public class Main {
     Studentinator s=new Studentinator();
     ArrayList<String> csvOut= new ArrayList<>();
     ArrayList<ArrayList<String>> file=new ArrayList<>();
-    csvOut=csvR.readFirstln("Art");
-    file=csvR.readFile("Art");
+    csvOut=csvR.readFirstln("Physics");
+    file=csvR.readFile("Physics");
     HashMap<String, ArrayList<Integer>> CIHOut= new HashMap<>();
     CIHOut= CIH.commonHashMapCreator(csvOut);
     for(Map.Entry<String, ArrayList<Integer>> pair:CIHOut.entrySet()){
