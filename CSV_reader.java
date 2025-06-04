@@ -28,11 +28,12 @@ public ArrayList<String> readFirstln(String filename){
 //Reads file from 2nd line down
 public ArrayList<ArrayList<String>> readFile(String filename){
     File file = new File("data\\"+filename);
+    String textoo;
     try {
         BufferedReader br = new BufferedReader(new FileReader(file));
-        while(br.readLine()!=null){
+        while((textoo=br.readLine())!=null){
         ArrayList<String> studentArray= new ArrayList<>();
-        String[] text=br.readLine().split(",");
+        String[] text=textoo.split(",");
         int i=0;     
         for(String word: text){
             studentArray.add(text[i]);
