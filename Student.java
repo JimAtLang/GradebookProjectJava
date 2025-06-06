@@ -41,8 +41,10 @@ public class Student {
     public String getName(){
         return name;
     }
-    @Override
-    public String toString() {
-        return "Student [getGrades()=" + getGrades() + ", getName()=" + getName() + "]";
+    public void printAverages(){
+        System.out.println(name);
+        for(String subject:averages.keySet()){
+            System.out.println(subject+": "+averages.get(subject));
+        }
     }
 }

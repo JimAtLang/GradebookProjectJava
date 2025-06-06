@@ -25,7 +25,6 @@ public class Studentinator {
                 s.setGrades(hm);
             }
             Students.add(s);
-            System.out.println(s.getName()+"- "+s.getGrades());            
         }
         return Students;
     }

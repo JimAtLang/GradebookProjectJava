@@ -19,13 +19,13 @@ public class Main {
         ArrayList<String> csvOut= new ArrayList<>();
         ArrayList<ArrayList<String>> file=new ArrayList<>();
         AvgGradeCalculator agc = new AvgGradeCalculator();
-        csvOut=csvR.readFirstln("Physics");
-        file=csvR.readFile("Physics");
+        csvOut=csvR.readFirstln(filename);
+        file=csvR.readFile(filename);
         HashMap<String, ArrayList<Integer>> CIHOut= new HashMap<>();
         CIHOut= CIH.commonHashMapCreator(csvOut);
         ArrayList<Student> Students = s.studentsForFile(CIHOut,file);
         for(Student stud:Students){
-            stud.putAverage("Physics",agc.GradeAverager(stud.getGrades()));
+            stud.putAverage(filename,agc.GradeAverager(stud.getGrades()));
         }
     }
 }
