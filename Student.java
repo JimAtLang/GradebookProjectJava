@@ -5,12 +5,17 @@ import java.util.HashMap;
 public class Student {
     private String name;
     private HashMap<String, ArrayList<Integer>> Grades;
+    private HashMap<String, Integer> averages;
     public void setGrades(HashMap<String, ArrayList<Integer>> grades) {
         Grades = grades;
     }
     public Student(String name,HashMap<String, ArrayList<Integer>> Grades){
         this.name=name;
         Grades= new HashMap<>();
+        averages = new HashMap<>();
+    }
+    public void putAverage(String s, int i){
+        averages.put(s, i);
     }
     public void addGradesList(String type, ArrayList<Integer> values){
         Grades.put(type, values);
@@ -35,5 +40,9 @@ public class Student {
     }
     public String getName(){
         return name;
+    }
+    @Override
+    public String toString() {
+        return "Student [getGrades()=" + getGrades() + ", getName()=" + getName() + "]";
     }
 }

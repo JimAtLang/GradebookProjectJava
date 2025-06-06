@@ -24,6 +24,9 @@ class AvgGradeCalculator {
         else if (assignmentType == "Final"){
             return x*FinalWeight;
         }
+        else if (assignmentType == "Project"){
+            return x*ProjectWeight;
+        }
         System.out.println("Something is wrong");
         return 0;
     }
